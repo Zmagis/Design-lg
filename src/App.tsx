@@ -1,11 +1,11 @@
 import React from 'react';
-import { Meniu } from './components/Meniu';
+import { Menu } from './components/menu/Menu';
 import { Content } from './components/Content';
 
 function App() {
   return (
     <>
-      <Meniu />
+      <Menu />
       <Content />
     </>
   );
