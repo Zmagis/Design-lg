@@ -1,11 +1,16 @@
 .item {
   display: flex;
-  padding: 5px 10px 5px 16px;
+  padding: 8px 10px 5px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.item:last-child {
+  border: none;
 }
 
 .avatar {
   border-radius: 50%;
-  background: #444444;
+  background: rgba(var(--primary-color));
   height: 30px;
   width: 30px;
   margin-right: 8px;
