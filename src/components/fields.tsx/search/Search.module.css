@@ -1,0 +1,38 @@
+.wrapper {
+  background: rgba(68, 68, 68, 0.5);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  flex-grow: 2;
+  color: inherit;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--main-txt-color);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--main-txt-color);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--main-txt-color);
+}
+
+.submitBtn {
+  background: #444444;
+  border-radius: 0px 30px 30px 0px;
+  border: none;
+  color: inherit;
+  padding: 8px 10px;
+}
