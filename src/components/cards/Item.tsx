@@ -8,7 +8,9 @@ type Props = { item: ListItem };
 export const Item: React.FC<Props> = ({ item }) => {
   return (
     <div className={styles.item}>
-      <div className={styles.avatar}></div>
+      <div className={styles.avatarWrapper}>
+        <div className={styles.avatar}></div>
+      </div>
       <div className={styles.description}>
         <h6>{item.title}</h6>
         <p>{item.description}</p>

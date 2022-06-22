@@ -17,8 +17,8 @@ export const Menu: React.FC = () => {
     <div className={styles.menuWrapper}>
       <div className={styles.menuTop}>
         <div className={styles.linksDesktop}>
-          {menuItems.map((item) => (
-            <a className={styles.link} href={item.url}>
+          {menuItems.map((item, i) => (
+            <a key={i} className={styles.link} href={item.url}>
               {item.title}
             </a>
           ))}
@@ -35,8 +35,8 @@ export const Menu: React.FC = () => {
 
       {isMenuOpen && (
         <div className={styles.linksMobile}>
-          {menuItems.map((item) => (
-            <a className={styles.linkMobile} href={item.url}>
+          {menuItems.map((item, i) => (
+            <a key={i} className={styles.linkMobile} href={item.url}>
               {item.title}
             </a>
           ))}

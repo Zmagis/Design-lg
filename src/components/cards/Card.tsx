@@ -15,7 +15,7 @@ export const Card: React.FC<Props> = ({ details }) => {
   };
 
   const handleSubmit = () => {
-    // TODO some logic on submit
+    // TODO add some logic on submit
   };
 
   return (
